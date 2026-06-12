@@ -56,15 +56,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Touch navigation for mobile
     let touchStartX = 0;
     let touchEndX = 0;
+    let isTouchOnScrollable = false;
 
     document.addEventListener('touchstart', e => {
         touchStartX = e.changedTouches[0].screenX;
-    }, false);
+        // Если касание произошло внутри блока с картинкой, запоминаем это
+        isTouchOnScrollable = !!e.target.closest('.template-image');
+    }, {passive: true});
 
     document.addEventListener('touchend', e => {
+        if (isTouchOnScrollable) return; // Игнорируем свайп, если юзер листает скриншот
+        
         touchEndX = e.changedTouches[0].screenX;
         handleSwipe();
-    }, false);
+    }, {passive: true});
 
     function handleSwipe() {
         const threshold = 50;
