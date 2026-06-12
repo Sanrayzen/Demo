@@ -175,3 +175,62 @@ ul {
     text-align: center;
     color: var(--text-muted);
 }
+
+/* Mobile Adaptation */
+@media (max-width: 768px) {
+    .slide {
+        padding: 1.5rem;
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+    
+    .slide-content {
+        padding-bottom: 5rem; /* Space for controls */
+    }
+    
+    .split-layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .main-heading {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    ul {
+        font-size: 1.1rem;
+        margin-left: 1rem;
+    }
+    
+    .template-image {
+        max-height: 45vh;
+    }
+    
+    .template-image::after {
+        display: none; /* Скрываем подсказку про скролл на мобилке, чтобы не мешала */
+    }
+    
+    .controls {
+        bottom: 1rem;
+        right: 1rem;
+        gap: 0.5rem;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 0.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .control-btn {
+        padding: 0.5rem;
+    }
+}
