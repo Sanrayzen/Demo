@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Архитектура финансовых данных</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container" id="slider">
+        
+        <!-- Slide 1 -->
+        <section class="slide active">
+            <div class="slide-content">
+                <div class="section-title">Внедрение управленческого учета</div>
+                <h1 class="main-heading">Архитектура точных<br>финансовых данных</h1>
+                <p class="subtitle">Для селлеров Ozon, Wildberries, Яндекс Маркет и Lamoda. Бизнес под микроскопом.<br>Абсолютная сверяемость каждой цифры.</p>
+            </div>
+        </section>
+
+        <!-- Slide 2 -->
+        <section class="slide">
+            <div class="slide-content split-layout">
+                <div class="text-column">
+                    <div class="section-title">Философия учета</div>
+                    <h1 class="main-heading">Бизнес под микроскопом</h1>
+                    <p>Масштабный бизнес не терпит интуитивного управления. Когда выручка исчисляется десятками и сотнями миллионов, погрешность даже в 1% может стоить компании существенной части прибыли.</p>
+                    <p>Наша задача — перевести управление компанией на язык точных, математически проверяемых метрик. Мы гарантируем точность обработки огромных массивов данных (десятки тысяч SKU, сотни тысяч транзакций) без единой потери.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3 -->
+        <section class="slide">
+            <div class="slide-content split-layout">
+                <div class="text-column">
+                    <div class="section-title">Ключевая ценность</div>
+                    <h1 class="main-heading">Абсолютная сверяемость</h1>
+                    <p>Фундамент нашего подхода — 100% сверяемость данных на каждом уровне. Никаких «неучтенных» расходов.</p>
+                    <ul>
+                        <li><strong>Личные кабинеты маркетплейсов:</strong> Данные забираются напрямую.</li>
+                        <li><strong>Анализ продаж:</strong> Детализация до копейки.</li>
+                        <li><strong>ОФР:</strong> Сводный P&L компании.</li>
+                    </ul>
+                    <p style="margin-top: 2rem; font-weight: 600;">
+                        Анализ продаж = ОФР (P&L) = Данные площадок
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4 -->
+        <section class="slide">
+            <div class="slide-content split-layout">
+                <div class="text-column">
+                    <div class="section-title">Фундамент</div>
+                    <h1 class="main-heading">Шаблон: Юнит-экономика</h1>
+                    <p>Моделирование рентабельности до старта продаж или запуска акций. Вы заранее знаете свою маржинальность при любом сценарии изменения комиссий маркетплейсов.</p>
+                </div>
+                <div class="visual-column">
+                    <!-- Placeholder for screenshot -->
+                    <div class="template-image">
+                        <img src="unit_economics.png" alt="Замените этот файл на скриншот Юнит-экономики (unit_economics.png)" onerror="this.style.display='none'; this.parentNode.innerHTML='Разместите скриншот шаблона в папке с именем unit_economics.png'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5 -->
+        <section class="slide">
+            <div class="slide-content split-layout">
+                <div class="text-column">
+                    <div class="section-title">Оцифровка факта</div>
+                    <h1 class="main-heading">Шаблон: Анализ продаж</h1>
+                    <p>Мы не смотрим на "средние показатели по больнице". Логика выстроена так, что расходы максимально распределяются по отношению к каждому артикулу, даже если это требует дополнительной выгрузки отчетности.</p>
+                </div>
+                <div class="visual-column">
+                    <!-- Placeholder for screenshot -->
+                    <div class="template-image">
+                        <img src="sales_analysis.png" alt="Замените этот файл на скриншот Анализа продаж (sales_analysis.png)" onerror="this.style.display='none'; this.parentNode.innerHTML='Разместите скриншот шаблона в папке с именем sales_analysis.png'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6 -->
+        <section class="slide">
+            <div class="slide-content split-layout">
+                <div class="text-column">
+                    <div class="section-title">Вершина архитектуры</div>
+                    <h1 class="main-heading">Шаблон: Отчет о финансовых результатах (ОФР)</h1>
+                    <p>Консолидация всей прибыли и косвенных расходов компании в единый кристально чистый P&L. Здесь видна реальная эффективность бизнеса.</p>
+                </div>
+                <div class="visual-column">
+                    <!-- Placeholder for screenshot -->
+                    <div class="template-image">
+                        <img src="pnl_report.png" alt="Замените этот файл на скриншот ОФР (pnl_report.png)" onerror="this.style.display='none'; this.parentNode.innerHTML='Разместите скриншот шаблона в папке с именем pnl_report.png'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7 -->
+        <section class="slide">
+            <div class="slide-content split-layout">
+                <div class="text-column">
+                    <div class="section-title">Детализация ОФР</div>
+                    <h1 class="main-heading">Факторный анализ</h1>
+                    <p>Мы не просто констатируем факт прибыли или убытка. Факторный анализ показывает, <strong>почему</strong> изменилась рентабельность и какие именно метрики (логистика, комиссии, скидки) повлияли на итоговый финансовый результат.</p>
+                </div>
+                <div class="visual-column">
+                    <div class="template-image">
+                        <img src="factor.png" alt="Скриншот факторного анализа" onerror="this.style.display='none'; this.parentNode.innerHTML='Убедитесь, что файл называется factor.png'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8 -->
+        <section class="slide">
+            <div class="slide-content split-layout">
+                <div class="text-column">
+                    <div class="section-title">Сводная аналитика</div>
+                    <h1 class="main-heading">Сравнение площадок</h1>
+                    <p>Анализ эффективности Ozon, Wildberries, Яндекс Маркет и Lamoda бок о бок за конкретный месяц. Наглядное сравнение доли рынка, маржинальности и структуры расходов для перераспределения рекламных бюджетов.</p>
+                </div>
+                <div class="visual-column">
+                    <div class="template-image">
+                        <img src="sravnenie.png" alt="Скриншот сравнения площадок" onerror="this.style.display='none'; this.parentNode.innerHTML='Убедитесь, что файл называется sravnenie.png'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9 -->
+        <section class="slide">
+            <div class="slide-content split-layout">
+                <div class="text-column">
+                    <div class="section-title">Для CEO</div>
+                    <h1 class="main-heading">BI-Визуализация и Дашборды</h1>
+                    <p>Сухие цифры трансформируются в наглядные дашборды: Live-KPI (Выручка, Рентабельность), аналитика Топ-10 товаров и состав удержаний.</p>
+                </div>
+                <div class="visual-column">
+                    <!-- Placeholder for screenshot -->
+                    <div class="template-image">
+                        <img src="dashboard.png" alt="Замените этот файл на скриншот дашборда (dashboard.png)" onerror="this.style.display='none'; this.parentNode.innerHTML='Разместите скриншот дашборда в папке с именем dashboard.png'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 10 -->
+        <section class="slide">
+            <div class="slide-content split-layout">
+                <div class="text-column" style="flex: 1 1 100%; max-width: 900px;">
+                    <div class="section-title">Индивидуальные решения</div>
+                    <h1 class="main-heading">Кастомные отчеты и надстройки</h1>
+                    <p>Мы не ограничиваемся базовой аналитикой. Для сложных бизнес-моделей мы разрабатываем специализированные надстройки, которые учитывают любую специфику вашего бизнеса:</p>
+                    <ul style="margin-top: 1.5rem; line-height: 1.8;">
+                        <li><strong>Партийный учет и контроль складов:</strong> Точное отслеживание оборачиваемости (stock days) и замороженных в запасах активов.</li>
+                        <li><strong>Сложная структура затрат:</strong> Многоуровневое распределение кастомных операционных расходов, учет кредитной нагрузки и автоматический расчет дивидендов.</li>
+                        <li><strong>ABC/XYZ-анализ:</strong> Углубленный анализ ассортимента и выявление "локомотивов" прибыли.</li>
+                        <li><strong>Индивидуальная визуализация:</strong> Проектирование специфических дашбордов и срезов данных под персональный запрос собственника.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 11 -->
+        <section class="slide">
+            <div class="slide-content">
+                <div class="section-title">Дорожная карта</div>
+                <h1 class="main-heading">Процесс внедрения</h1>
+                
+                <ol style="font-size: 1.25rem; line-height: 2; margin-left: 2rem; color: #4B5563;">
+                    <li><strong>Аудит данных:</strong> Сбор исторической даты, выявление узких мест в учете.</li>
+                    <li><strong>Развертывание архитектуры:</strong> Связка отчетов под ваши артикулы и спецификации (партийный учет, разные склады).</li>
+                    <li><strong>Визуализация:</strong> Интеграция нестандартных отчетов и настройка дашбордов.</li>
+                    <li><strong>Передача и Обучение:</strong> Обучение финансовой службы, техническая поддержка.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Slide 9 -->
+        <section class="slide">
+            <div class="slide-content">
+                <div class="section-title">Резюме</div>
+                <h1 class="main-heading">Спокойствие собственника и тотальный контроль</h1>
+                <p style="max-width: 800px; font-size: 1.5rem;">Внедрение нашей системы дает 100% уверенность в каждой цифре. Вы получаете полную детализацию всех процессов и мощный инструмент для принятия стратегических решений.</p>
+                
+                <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #E5E7EB;">
+                    <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Следующий шаг</h2>
+                    <p>Запишитесь на индивидуальный аудит. Мы проведем демо-разбор на базе вашего товара и покажем потенциал роста чистой прибыли.</p>
+                    <p><strong>Контакты:</strong> Telegram @YourAccount | +7 (999) 000-00-00</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="controls">
+        <button id="prevBtn" class="control-btn" aria-label="Previous">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <span id="slideIndicator">1 / 12</span>
+        <button id="nextBtn" class="control-btn" aria-label="Next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
